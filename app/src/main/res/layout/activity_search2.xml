@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".ui.activity.Search2Activity">
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@mipmap/menu"
+            android:layout_gravity="center"
+            android:id="@+id/img_menu"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24" />
+        <EditText
+            android:id="@+id/img_edit"
+            android:textColorHint="#000"
+            android:layout_gravity="center"
+            android:backgroundTint="#ffffff"
+            android:layout_width="@dimen/dp_250"
+            android:layout_height="50dp" />
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:src="@mipmap/search" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_recycler"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_20"/>
+</LinearLayout>

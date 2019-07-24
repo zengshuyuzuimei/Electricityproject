@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.SubmitOrderActivity">
+    <TextView
+        android:layout_marginTop="@dimen/dp_138"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:textSize="@dimen/sp_16"
+        android:textColor="#666666"
+        android:text="选择支付方式"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="@dimen/dp_321"
+        android:layout_height="@dimen/dp_180"
+        android:background="@drawable/child_backgroud"
+        android:layout_marginLeft="@dimen/dp_24"
+        >
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/common_icon_money_n_hdpi"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40" />
+            <TextView
+                android:layout_marginLeft="@dimen/dp_20"
+                android:text="余额支付"
+                android:layout_gravity="center"
+                android:textColor="#666666"
+                android:textSize="@dimen/dp_14"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:id="@+id/yue_check"
+                android:layout_marginLeft="@dimen/dp_100"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/common_icon_weixin_n_hdpi"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40" />
+            <TextView
+                android:layout_marginLeft="@dimen/dp_20"
+                android:text="微信支付"
+                android:layout_gravity="center"
+                android:textColor="#666666"
+                android:textSize="@dimen/dp_14"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:id="@+id/wx_check"
+                android:layout_marginLeft="@dimen/dp_100"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/common_icon_zhifubao_n_hdpi"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40" />
+            <TextView
+                android:layout_marginLeft="@dimen/dp_20"
+                android:text="支付宝支付"
+                android:layout_gravity="center"
+                android:textColor="#666666"
+                android:textSize="@dimen/dp_14"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:id="@+id/zfb_check"
+                android:layout_marginLeft="@dimen/dp_100"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:background="@drawable/btn"
+        android:textSize="@dimen/dp_14"
+        android:text="余额支付768元"
+        android:textColor="#ffffff"
+        android:id="@+id/submit_btn"
+        android:layout_marginTop="@dimen/dp_100"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginBottom="@dimen/dp_100"
+        android:layout_width="@dimen/dp_312"
+        android:layout_height="@dimen/dp_40" />
+</LinearLayout>

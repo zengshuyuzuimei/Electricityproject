@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/child_backgroud"
+    android:layout_margin="@dimen/dp_10"
+    android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/foot_img"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100" />
+        <TextView
+            android:id="@+id/foot_name"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginLeft="@dimen/dp_10"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/foot_price"
+                android:textColor="#ff1616"
+                android:text="jiage"
+                android:layout_marginRight="@dimen/dp_50"
+                android:textSize="@dimen/sp_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/foot_ll"
+                android:text="浏览"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/foot_time"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="2019年7月22日21:35:20"
+            android:paddingLeft="@dimen/dp_30"
+            android:layout_width="@dimen/dp_200"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:layout_height="wrap_content" />
+
+</LinearLayout>

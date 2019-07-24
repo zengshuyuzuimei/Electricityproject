@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_5"
+    android:background="@drawable/child_backgroud"
+    >
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80">
+        <ImageView
+            android:id="@+id/go_img"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60" />
+        <TextView
+            android:id="@+id/go_name"
+            android:layout_toRightOf="@id/go_img"
+            android:singleLine="true"
+            android:layout_alignTop="@id/go_img"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_toRightOf="@id/go_img"
+            android:layout_alignBottom="@id/go_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/go_price"
+                android:textColor="#ff0606"
+                android:text="￥520.00"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/dp_14"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/go_appraise"
+                android:text="去评价"
+                android:background="#ff5e70"
+                android:textColor="#fff"
+                android:layout_marginLeft="@dimen/dp_50"
+                android:layout_width="@dimen/dp_70"
+                android:layout_height="@dimen/dp_30" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

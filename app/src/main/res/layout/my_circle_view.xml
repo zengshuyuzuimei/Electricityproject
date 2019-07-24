@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/child_backgroud"
+    android:layout_marginBottom="@dimen/dp_20"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="曾淑雨啧啧啧啧啧啧做做做做做做做做做啧啧啧啧啧啧做做做
+        做做做做做做做做做做做做做做做做做做做做做做做做做做"
+        android:layout_marginTop="@dimen/dp_20"
+        android:textSize="@dimen/sp_12"
+        android:textColor="#666666"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:id="@+id/circle_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/circle_img"
+        android:src="@mipmap/wu"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100" />
+    <LinearLayout
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/circle_time"
+            android:text="2019年7月20日10:19:50"
+            android:textSize="@dimen/dp_10"
+            android:textColor="#666666"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/circle_zan"
+            android:src="@drawable/zan_true"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20" />
+        <TextView
+            android:id="@+id/circle_num"
+            android:text="2220"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#666666"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_80"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_20" />
+    </LinearLayout>
+</LinearLayout>

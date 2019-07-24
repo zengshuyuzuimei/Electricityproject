@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_5"
+    android:background="@drawable/child_backgroud"
+    >
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80">
+        <ImageView
+            android:id="@+id/play_img"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60" />
+        <TextView
+            android:id="@+id/play_name"
+            android:layout_toRightOf="@id/play_img"
+            android:singleLine="true"
+            android:layout_alignTop="@id/play_img"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_toRightOf="@id/play_img"
+            android:layout_alignBottom="@id/play_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/play_price"
+                android:textColor="#ff0606"
+                android:text="￥520.00"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/dp_14"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="wrap_content" />
+            <com.example.electricityproject.ui.widget.SubView
+                android:id="@+id/play_subview"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_width="@dimen/dp_31"
+                android:layout_height="@dimen/dp_18"></com.example.electricityproject.ui.widget.SubView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

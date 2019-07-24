@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <CheckBox
+            android:id="@+id/child_check"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:id="@+id/child_img"
+            android:layout_height="100dp"
+            android:layout_width="100dp"/>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_width="wrap_content">
+            <TextView
+                android:id="@+id/child_name"
+                android:layout_margin="@dimen/dp_5"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+            <TextView
+                android:id="@+id/child_price"
+                android:textColor="#f63"
+                android:layout_margin="@dimen/dp_5"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+            <com.example.electricityproject.ui.widget.SubView
+                android:id="@+id/subview"
+                android:layout_marginLeft="@dimen/dp_100"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
