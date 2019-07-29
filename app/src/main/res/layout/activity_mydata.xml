@@ -46,7 +46,6 @@
                 android:layout_height="wrap_content" />
             <ImageView
                 android:id="@+id/my_data_img"
-                android:src="@mipmap/my_touxiang"
                 android:layout_marginTop="@dimen/dp_10"
                 android:layout_marginBottom="@dimen/dp_10"
                 android:layout_marginLeft="@dimen/dp_200"

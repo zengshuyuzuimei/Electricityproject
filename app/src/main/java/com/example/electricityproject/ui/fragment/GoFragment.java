@@ -19,7 +19,7 @@ import java.util.ArrayList;
  *@Auther:吴亦凡的小可爱
  *@Date: 2019/7/22
  *@Time: 19:14:55
- *@Description:
+ *@Description:待评价
  * */
 public class GoFragment extends BaseFragment<GoContract.GoView, GoPresenter<GoContract.GoView>> implements GoContract.GoView {
     private RecyclerView go_recycler;

@@ -36,19 +36,20 @@ public class PlayFragment extends BaseFragment<PlayContract.PlayView, PlayPresen
         PlayAdapter playAdapter = new PlayAdapter(R.layout.play_view, beans);
         play_recycler.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.VERTICAL,false));
         play_recycler.setAdapter(playAdapter);
-        playAdapter.setOnPlayChange(new AllAdapter.onPlayChange() {
+        playAdapter.setOnPlayChange(new PlayAdapter.onPlayChange() {
             @Override
             public void getData() {
                 startActivity(new Intent(getContext(), SubmitOrderActivity.class));
             }
 
             @Override
-            public void getDel(String orderId) {
+            public void getCancel(String id) {
                 SharedPreferences login = getActivity().getSharedPreferences("login", Context.MODE_PRIVATE);
                 int userId = login.getInt("userId", 1);
                 String sessionId = login.getString("sessionId", "");
-                presenter.showDel(userId,sessionId,orderId);
+                presenter.showDel(userId,sessionId,id);
             }
+
         });
         playAdapter.notifyDataSetChanged();
     }

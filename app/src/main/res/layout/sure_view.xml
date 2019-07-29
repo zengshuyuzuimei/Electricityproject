@@ -8,8 +8,11 @@
         android:layout_height="wrap_content">
         <CheckBox
             android:id="@+id/sure_check"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_marginRight="@dimen/dp_5"
+            android:button="@null"
+            android:background="@drawable/commom_btn_check"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20" />
         <TextView
             android:id="@+id/sure_name"
             android:layout_width="match_parent"

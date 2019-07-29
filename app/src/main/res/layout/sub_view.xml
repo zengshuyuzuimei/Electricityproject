@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="@dimen/dp_31"
+    android:layout_width="@dimen/dp_90"
     android:gravity="center"
     android:background="#fff"
     android:layout_height="@dimen/dp_18">
@@ -8,18 +8,25 @@
         android:id="@+id/del"
         android:text="-"
         android:gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:textColor="#666"
+        android:textSize="@dimen/sp_16"
+        android:layout_width="@dimen/dp_31"
+        android:layout_height="@dimen/sp_18" />
     <TextView
         android:id="@+id/num"
         android:gravity="center"
         android:text="1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:background="#ccc"
+        android:textSize="@dimen/sp_16"
+        android:textColor="#666666"
+        android:layout_width="@dimen/dp_31"
+        android:layout_height="@dimen/dp_18" />
     <TextView
         android:id="@+id/add"
         android:text="+"
+        android:textColor="#666"
         android:gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:textSize="@dimen/sp_16"
+        android:layout_width="@dimen/dp_31"
+        android:layout_height="@dimen/dp_18" />
 </LinearLayout>

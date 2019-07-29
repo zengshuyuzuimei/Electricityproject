@@ -26,7 +26,7 @@ public class PlayAdapter extends BaseQuickAdapter<StatusBean.OrderListBean, Base
     }
 
     @Override
-    protected void convert(BaseViewHolder helper, StatusBean.OrderListBean item) {
+    protected void convert(BaseViewHolder helper, final StatusBean.OrderListBean item) {
         helper.setText(R.id.play_code,"订单号"+item.getOrderId());
         helper.setText(R.id.play_time,"2019-07-18");
         RecyclerView play_child_recycler = helper.getView(R.id.play_child_recycler);
@@ -48,12 +48,21 @@ public class PlayAdapter extends BaseQuickAdapter<StatusBean.OrderListBean, Base
                 }
             }
         });
+        all_cal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (onPlayChange!=null){
+                    onPlayChange.getCancel(item.getOrderId());
+                }
+            }
+        });
     }
     public interface onPlayChange{
         public  void getData();
+        public void getCancel( String id);
     }
-    AllAdapter.onPlayChange onPlayChange;
-    public  void  setOnPlayChange(AllAdapter.onPlayChange onPlayChange){
+    onPlayChange onPlayChange;
+    public  void  setOnPlayChange(onPlayChange onPlayChange){
         this.onPlayChange = onPlayChange;
     }
 }

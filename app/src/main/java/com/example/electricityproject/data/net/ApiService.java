@@ -1,8 +1,10 @@
 package com.example.electricityproject.data.net;
 
 import java.util.HashMap;
+import java.util.List;
 
 import io.reactivex.Observable;
+import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 import okhttp3.ResponseBody;
 import retrofit2.http.Body;
@@ -12,8 +14,10 @@ import retrofit2.http.FieldMap;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.Header;
+import retrofit2.http.Multipart;
 import retrofit2.http.POST;
 import retrofit2.http.PUT;
+import retrofit2.http.Part;
 import retrofit2.http.Query;
 import retrofit2.http.QueryMap;
 
@@ -127,4 +131,9 @@ public interface ApiService {
     @DELETE("small/order/verify/v1/deleteOrder")
     Observable<ResponseBody> sendDelete(@Header("userId") int userId
             , @Header("sessionId") String sessionId,@Query("orderId") String orderId);
+    //上传头像
+    @Multipart
+    @POST("small/user/verify/v1/modifyHeadPic")
+    Observable<ResponseBody> sendImg(@Header("userId") int userId
+            , @Header("sessionId") String sessionId,@Part List<MultipartBody.Part> part);
 }

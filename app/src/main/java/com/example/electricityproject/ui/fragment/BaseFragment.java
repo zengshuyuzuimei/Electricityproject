@@ -20,7 +20,7 @@ import butterknife.ButterKnife;
  *@Auther:吴亦凡的小可爱
  *@Date: 2019/7/16
  *@Time: 20:11:26
- *@Description:
+ *@Description:fragment抽基类
  * */
 public abstract class BaseFragment<V,P extends BasePresenter<V>> extends Fragment {
 

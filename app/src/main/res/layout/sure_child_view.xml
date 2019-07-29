@@ -5,8 +5,11 @@
     <CheckBox
         android:layout_gravity="center"
         android:id="@+id/sure_child_check"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:button="@null"
+        android:background="@drawable/commom_btn_check"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20" />
     <ImageView
         android:id="@+id/sure_child_img"
         android:layout_width="@dimen/dp_100"

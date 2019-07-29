@@ -32,7 +32,7 @@ public class AppraiseAdapter extends BaseQuickAdapter<StatusBean.OrderListBean, 
         RecyclerView child_view = helper.getView(R.id.appraise_child_recycler);
         List<StatusBean.OrderListBean.DetailListBean> detailList = item.getDetailList();
         //创建适配器
-        AllChildAdapter allChildAdapter = new AllChildAdapter(R.layout.appraise_child_view, detailList);
+        AppraiseChildAdapter allChildAdapter = new AppraiseChildAdapter(R.layout.appraise_child_view, detailList);
         child_view.setLayoutManager(new LinearLayoutManager(App.context,LinearLayoutManager.VERTICAL,false));
         child_view.setAdapter(allChildAdapter);
         ImageView img = helper.getView(R.id.appraise_more);

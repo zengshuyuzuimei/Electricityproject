@@ -2,22 +2,38 @@
 <LinearLayout
     android:orientation="vertical"
     android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_24"
+    android:layout_marginRight="@dimen/dp_24"
+    android:background="@drawable/child_backgroud"
+    android:layout_marginBottom="@dimen/dp_20"
+    android:layout_marginTop="@dimen/dp_10"
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_28"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <CheckBox
             android:id="@+id/parent_check"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_gravity="center"
+            android:button="@null"
+            android:background="@drawable/commom_btn_check"
+            android:layout_width="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_height="@dimen/dp_20" />
         <TextView
             android:id="@+id/parent_name"
-            android:layout_width="@dimen/dp_100"
-            android:layout_height="@dimen/dp_30" />
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:background="@drawable/text_color"
+            android:layout_width="@dimen/dp_76"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_height="@dimen/dp_34" />
     </LinearLayout>
     <android.support.v7.widget.RecyclerView
+        android:layout_marginLeft="@dimen/dp_28"
         android:id="@+id/child_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>

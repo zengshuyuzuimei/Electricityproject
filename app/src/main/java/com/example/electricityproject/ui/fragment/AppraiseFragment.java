@@ -21,7 +21,7 @@ import java.util.ArrayList;
  *@Auther:吴亦凡的小可爱
  *@Date: 2019/7/22
  *@Time: 19:14:55
- *@Description:
+ *@Description:评价页面
  * */
 public class AppraiseFragment extends BaseFragment<AppraiseContract.AppraiseView, AppraisePresenter<AppraiseContract.AppraiseView>> implements AppraiseContract.AppraiseView {
     private RecyclerView appraise_recycler;

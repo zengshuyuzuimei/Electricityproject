@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginBottom="@dimen/dp_60"
+    android:background="#fff"
+    android:layout_marginBottom="@dimen/dp_40"
     >
 
     <android.support.v7.widget.RecyclerView
@@ -17,24 +18,41 @@
         android:gravity="center_vertical"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="60dp">
-        <CheckBox
-            android:id="@+id/all_check"
-            android:text="全选"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_height="@dimen/dp_50">
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/all_check"
+                android:button="@null"
+                android:layout_marginRight="@dimen/dp_5"
+                android:background="@drawable/commom_btn_check"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20" />
+            <TextView
+                android:text="全部"
+                android:textColor="#666"
+                android:textSize="@dimen/sp_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
         <TextView
             android:id="@+id/price"
             android:text="总价：￥0.00"
             android:layout_marginLeft="@dimen/dp_10"
             android:textSize="@dimen/sp_12"
+            android:textColor="#666"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <Button
             android:id="@+id/btn"
             android:text="去结算(0)"
-            android:layout_marginLeft="100dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:background="@drawable/btn"
+            android:layout_marginLeft="@dimen/dp_120"
+            android:layout_width="@dimen/dp_118"
+            android:layout_height="@dimen/dp_50" />
     </LinearLayout>
 </RelativeLayout>

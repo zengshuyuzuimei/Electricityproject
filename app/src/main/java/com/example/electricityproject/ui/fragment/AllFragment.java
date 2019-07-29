@@ -23,7 +23,7 @@ import java.util.List;
  *@Auther:吴亦凡的小可爱
  *@Date: 2019/7/22
  *@Time: 19:14:55
- *@Description:
+ *@Description:全部订单
  * */
 public class AllFragment extends BaseFragment<AllContract.AllView, AllPresenter<AllContract.AllView>> implements AllContract.AllView {
     private RecyclerView all_recycler;

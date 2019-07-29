@@ -33,7 +33,7 @@ import butterknife.Unbinder;
  *@Auther:吴亦凡的小可爱
  *@Date: 2019/7/16
  *@Time: 19:56:29
- *@Description:
+ *@Description:购物车页面
  * */
 public class CarFragment extends BaseFragment<CarContract.CarView, CarPresenter<CarContract.CarView>> implements CarContract.CarView {
 
